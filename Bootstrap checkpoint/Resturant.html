@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chop Bites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> <!-- Bootstrap Icons CDN -->
+    <style>
+        .hero-section {
+            background-image: url('https://t3.ftcdn.net/jpg/03/24/73/92/360_F_324739203_keeq8udvv0P2h1MLYJ0GLSlTBagoXS48.jpg'); 
+            background-size: cover;
+            background-position: center;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero-button {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        .menu-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .social-icons i {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section (Navbar) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-between">
+            <!-- Logo on the Left -->
+            <a class="navbar-brand" href="#"></a>
+            <img src="Assests/fast-food-logo-restaurant-logo-design-template-cc731b4f2a5005f5716bec573cbeaf1d_screen.jpg" alt="Logo" style="width: 100px; height: auto;">
+
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div>
+            <h1>Welcome to Delicious Restaurant</h1>
+            <p>Experience the finest dishes prepared with love</p>
+            <a href="#menu" class="hero-button">See the Menu</a>
+        </div>
+    </div>
+
+    <!-- Menu Section -->
+    <div id="menu" class="container my-5">
+        <h2 class="text-center mb-4">Our Menu</h2>
+        <div class="row">
+            <!-- Menu Item 1 -->
+            <div class="col-md-4">
+                <div class="menu-item">
+                    <img src="Assests/Grilled-Chicken-Overhead.jpg" alt="Grilled Chicken">
+                    <h4 class="mt-3">Grilled Chicken</h4>
+                    <p>A savory grilled chicken with a side of vegetables.</p>
+                    <p><strong>$15.99</strong></p>
+                </div>
+            </div>
+            <!-- Menu Item 2 -->
+            <div class="col-md-4">
+                <div class="menu-item">
+                    <img src="Assests/Pasta-Primavera-f.jpg" alt="Pasta Primavera">
+                    <h4 class="mt-3">Pasta Primavera</h4>
+                    <p>Fresh pasta with seasonal vegetables in a creamy sauce.</p>
+                    <p><strong>$12.99</strong></p>
+                </div>
+            </div>
+            <!-- Menu Item 3 -->
+            <div class="col-md-4">
+                <div class="menu-item">
+                    <img src="Assests/seafood paela.jpg" alt="Seafood Paella">
+                    <h4 class="mt-3">Seafood Paella</h4>
+                    <p>A delicious mix of seafood and rice, cooked to perfection.</p>
+                    <p><strong>$18.99</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <div id="about" class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Assests/resturant interior.jpg" alt="Restaurant Interior" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>Delicious Restaurant has been serving the finest cuisine for over 20 years. We pride ourselves on using the freshest ingredients and offering a warm, welcoming atmosphere for every guest. Whether you're here for a special occasion or just a casual meal, our menu is sure to satisfy your taste buds.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>&copy; 2024 Delicious Restaurant. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="#" class="text-decoration-none"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-decoration-none"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-decoration-none"><i class="bi bi-instagram"></i></a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
